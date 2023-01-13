@@ -1,0 +1,34 @@
+header {
+background-color: white;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+footer {
+    background-color: white;
+}
+
+.mgb {
+    margin-bottom: 20px;
+}
+
+.btncolor {
+    background-color: tan;
+    color: black;
+}
+
+.mtb {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans'
+}
+
+.txt {
+    text-decoration: none;
+}
+
+.white {
+    background-color: white;
+}
