@@ -1,3 +1,4 @@
+//Defino mi Carrito y que cargue sus productos en la Tabla.
 const renderProductosCarrito = () => {
     const productos_carrito = cargarProductosCarrito();
     let salida = "";
@@ -17,7 +18,7 @@ const renderProductosCarrito = () => {
             <td class="align-middle">$${producto.cantidad * producto.precio}</td>
             <td class="align-middle text-end"><a href="#" title="Eliminar Producto" onClick="eliminarProducto(${producto.id});">-><img src="images/basura.png" alt="Eliminar Producto" width="35" /></a></td>`;
         }
-
+//Muestro la salida del total de la suma de la tabla.
         salida += `<tr>
         <td colspan="3"><b>Suma Total</b></td>
         <td><b>$${sumaCarrito()}</b></td>

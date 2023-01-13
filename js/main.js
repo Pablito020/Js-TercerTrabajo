@@ -1,3 +1,4 @@
+//Hago una carga rapida de mis productos sobre el HTML
 const renderProductos = () => {
     const productos = cargarProductosLS();
     let salida = "";

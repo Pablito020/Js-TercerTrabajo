@@ -1,3 +1,4 @@
+//Defino mi array de productos (Basicos).
 const productos = [
     {id: 1,  nombre: "Combo Spinning Reel Albatros + Caña Starfish 2,10", descripcion: "Combo Caña Starfish + Reel Albatros ideal para tu dia en el rio.", precio: 6800, imagen: "combo1.png", categoria: "Pesca"},
     {id: 2,  nombre: "Combo Caña BRAVA de 3.00m 2T + Reel frontal BG 60FD", descripcion: "Combo Caña BRAVA 3.00m 2T + Reel frontal BG 60FD Fibra de carbono.", precio: 7800, imagen: "combo2.png", categoria: "Pesca"},
@@ -10,10 +11,12 @@ const productos = [
     {id: 9,  nombre: "Combos Pesca X2 Niña + Niño- Caña Telesc 1,80 Reel Rosa/azul", descripcion: "Combo Niños, ideal para entretenerlos.", precio: 3200, imagen: "combo9.png", categoria: "Pesca"},
 ]
 
+//Guardo mis productos en el LocalStorage.
 const guardarProductosLS = (productos) => {
     localStorage.setItem("productos", JSON.stringify(productos));
 }
 
+//Me retorna los productos guardados.
 const cargarProductosLS = () => {
     return JSON.parse(localStorage.getItem("productos")) || [];
 }
